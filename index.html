@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#d8f7f4">
+  <title>little desktop world ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wallpaper-glow"></div>
+
+  <header class="menubar">
+    <div class="menu-left">
+      <span class="apple">✿</span>
+      <b>little world</b>
+      <span>file</span><span>edit</span><span>view</span>
+      <span>window</span><span>help</span>
+    </div>
+    <div class="menu-right">
+      <span>◉</span><span>♫</span><span id="topClock">08:08</span>
+    </div>
+  </header>
+
+  <main class="desktop" id="desktop">
+
+    <section class="widget clock-widget tile" data-page="diary">
+      <div class="clock-time" id="bigClock">08:08</div>
+      <div class="clock-date" id="dateLine">tuesday, october 20</div>
+      <div class="tiny-stars">✦ · ˚ ✧ · ˚ ✦</div>
+    </section>
+
+    <section class="widget music-widget tile" data-page="music">
+      <div class="widget-heading">♡ tiny radio</div>
+      <div class="player-row">
+        <button class="round-btn" id="playMusic">▶</button>
+        <div>
+          <b id="trackName">cotton candy skies</b>
+          <small id="trackState">ready to play ♡</small>
+        </div>
+      </div>
+      <div class="equalizer">
+        <i></i><i></i><i></i><i></i><i></i>
+        <i></i><i></i><i></i><i></i><i></i>
+      </div>
+    </section>
+
+    <section class="widget creature-widget tile" data-page="garden">
+      <div class="creature">🐸</div>
+      <div class="sparkle s1">✧</div>
+      <div class="sparkle s2">♡</div>
+      <div class="widget-caption">frog's little garden</div>
+    </section>
+
+    <section class="widget calendar-widget tile" data-page="calendar">
+      <div class="widget-heading">♡ october 2026</div>
+      <div class="calendar-grid" id="calendarGrid"></div>
+      <div class="calendar-foot">a tiny day, a tiny dream ✿</div>
+    </section>
+
+    <section class="widget photo-widget tile" data-page="memories">
+      <div class="sticker-row">
+        <span>🧸</span><span>🌷</span><span>🐣</span>
+      </div>
+      <div class="photo-title">little memory box</div>
+      <small>click to open your memories</small>
+    </section>
+
+    <section class="widget note-widget tile" data-page="notes">
+      <div class="note-pin">✿</div>
+      <div class="note-title">a note for today</div>
+      <p>you do not have to bloom all at once.</p>
+      <small>tap to write something ♡</small>
+    </section>
+
+    <section class="widget mail-widget tile" data-page="mail">
+      <div class="mail-icon">✉</div>
+      <div>
+        <b>postbox</b>
+        <small>3 little letters waiting</small>
+      </div>
+      <span class="mail-count">3</span>
+    </section>
+
+    <section class="widget game-widget tile" data-page="games">
+      <div class="game-face">◡̈</div>
+      <b>tiny arcade</b>
+      <small>games & little quests</small>
+      <span class="game-star">✦</span>
+    </section>
+
+    <section class="widget mood-widget tile" data-page="mood">
+      <div class="mood-title">how is your heart?</div>
+      <div class="mood-icons"><span>☁</span><span>♡</span><span>☼</span></div>
+      <small>choose a mood inside</small>
+    </section>
+
+    <section class="widget garden-widget tile" data-page="garden">
+      <div class="flower-pot">🌼<br>🌱</div>
+      <div><b>pocket garden</b><small>grow a tiny flower</small></div>
+    </section>
+
+    <section class="widget guestbook-widget tile" data-page="guestbook">
+      <div class="guest-hearts">♡ ♡ ♡</div>
+      <b>guestbook</b>
+      <small>leave a tiny hello</small>
+    </section>
+
+    <section class="widget playlist-widget tile" data-page="music">
+      <div class="cassette">♫</div>
+      <div><b>soft sounds</b><small>playlist no. 01</small></div>
+    </section>
+
+    <div class="desktop-label">
+      double-click nothing; one click is enough ♡
+    </div>
+
+    <div class="floating f1">✧</div>
+    <div class="floating f2">♡</div>
+    <div class="floating f3">✿</div>
+
+  </main>
+
+  <nav class="dock" aria-label="shortcut aplikasi">
+    <button data-page="diary" title="diary">📔</button>
+    <button data-page="music" title="radio">🎧</button>
+    <button data-page="games" title="games">🎮</button>
+    <button data-page="garden" title="garden">🌱</button>
+    <button data-page="notes" title="notes">📝</button>
+    <button data-page="guestbook" title="guestbook">💌</button>
+  </nav>
+
+  <div class="window-layer" id="windowLayer" aria-live="polite"></div>
+  <div class="toast" id="toast">♡</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
